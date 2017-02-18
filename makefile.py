@@ -3,7 +3,7 @@ import os
 
 
 def makefile(path):
-    for i in range(204):
+    for i in range(204,346):
         j = '%03d' % i
         filePath = path + 'PX' + str(j)
         if os.path.exists(filePath):
@@ -13,5 +13,5 @@ def makefile(path):
             print '创建成功'
 
 
-path = '/Users/xufly/Competition/prostateX/PX_Images/'
+path = '/Users/xufly/SPIECompetition/PX_Images_Test_DCE/'
 makefile(path)
